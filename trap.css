@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trapPage{
+    width: 90%;
+    max-width: 700px;
+    border: 3px solid red;
+    padding: 30px;
+    text-align: center;
+    animation: shake 0.4s infinite;
+  }
+  
+  .trapTitle{
+    font-size: 50px;
+    color: red;
+    margin: 0 0 20px;
+    animation: flash 0.8s infinite;
+  }
+  
+  .trapWarning{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .trapText{
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .trapBtn{
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .trapBtn:hover{
+    background: white;
+    color: black;
+  }
+  
+  @keyframes flash{
+    0%{opacity: 1;}
+    50%{opacity: 0.3;}
+    100%{opacity: 1;}
+  }
+  
+  @keyframes shake{
+    0%{transform: translate(0px, 0px);}
+    25%{transform: translate(2px, -2px);}
+    50%{transform: translate(-2px, 2px);}
+    75%{transform: translate(2px, 2px);}
+    100%{transform: translate(0px, 0px);}
+  }

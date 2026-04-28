@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spam – Bill Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+body{
+  background-image: url('assets/wallpaper_bg.png');
+}
+
+    .logo {
+      width: 120px;
+    }
+
+    .greenBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; 
+  background: #1db954; 
+  z-index: 1;
+}
+
+.page {
+  position: relative;
+  z-index: 2;
+}
+  </style>
+</head>
+
+<body>
+  <div class="greenBar"></div>
+  <div class="page">
+
+    <div class="top">
+      <img src="assets/BillBuddy_Logo.png" class="logo">
+      <div class="logoBrush">BILL BUDDY</div>
+    </div>
+
+    <h1 class="bigTitle" id="mainTitle">ESCAPE THE BAD DEAL</h1>
+
+    <div class="spamCard">
+      <p id="topText1">You are trapped in fake offers, hidden charges and confusing contract terms</p>
+      <p id="topText2">Get 8 right answers to escape</p>
+
+      <div class="timerBox">
+        Time Left: <span id="timer">45</span>s
+      </div>
+
+      <div class="scoreBox">
+        Keys: <span id="score">0</span>/8
+      </div>
+
+      <div class="questionBox">
+        <h2 id="question">Question here</h2>
+
+        <button class="checkBtn" id="btn0" type="button">Answer 1</button>
+        <button class="checkBtn" id="btn1" type="button">Answer 2</button>
+        <button class="checkBtn" id="btn2" type="button">Answer 3</button>
+
+        <div class="feedback" id="feedback"></div>
+      </div>
+    </div>
+
+    <div class="spamPop" id="spam1"></div>
+    <div class="spamPop" id="spam2"></div>
+    <div class="spamPop" id="spam3"></div>
+    <div class="spamPop" id="spam4"></div>
+    <div class="spamPop" id="spam5"></div>
+    <div class="spamPop" id="spam6"></div>
+    <div class="spamPop" id="spam7"></div>
+    <div class="spamPop" id="spam8"></div>
+    <div class="spamPop" id="spam9"></div>
+    <div class="spamPop" id="spam10"></div>
+
+  </div>
+
+  <script src="spam.js"></script>
+</body>
+</html>
